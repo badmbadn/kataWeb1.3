@@ -1,1 +1,1 @@
-https://badmbadn.github.io/kataBlock-1.3/
+https://badmbadn.github.io/kataWeb1.3/
