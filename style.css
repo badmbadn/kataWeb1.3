@@ -327,9 +327,8 @@ header {
    visibility: visible;
 }
 .expand-paragraph:hover ~ .more-paragraph::after {
-   color:#ff3e79 ;
+   color:#ff3e79;
 }
-
 .expand-paragraph:focus-visible ~ .more-paragraph::after {
    border: 2px solid rgb(15, 15, 15);
    border-radius: 2px;
@@ -340,13 +339,16 @@ header {
    max-height:100%;
    transition: max-height 0.4s 0.1s ease-out;  
 }
-
+.expand-paragraph:not(:checked) ~ .more-paragraph::after {
+   color: inherit;
+}
 .expand-paragraph:checked ~ .more-paragraph::after {
    content: 'Скрыть';
    font-family: "TT Lakes";
    font-size: 16px;
    line-height: 24px;
    font-weight: 500;
+   color: #ff3e79;
    padding-left: 26px;
    background: url(assets/img/icon/expandDown.svg) no-repeat 5px 4.5px;
    
